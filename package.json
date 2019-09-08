@@ -1,0 +1,23 @@
+{
+  "name": "jsdesignpatterns",
+  "version": "1.0.0",
+  "description": "learning js design patterns from imooc at https://coding.imooc.com/learn/list/255.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config ./webpack.dev.config.js --mode development"
+  },
+  "keywords": [
+    "javascript",
+    "design",
+    "patterns"
+  ],
+  "author": "tyler4400",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
