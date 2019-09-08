@@ -16,5 +16,12 @@ module.exports = {
         contentBase: path.join(__dirname, './release'),
         open: true,
         port: 9019
+    },
+    module: {
+        rules: [{
+            test: /\.js?$/, // 将匹配到的js语法从es6转为es5
+            exclude: /(node_modules)/,
+            loader: 'babel-loader'
+        }]
     }
 };
