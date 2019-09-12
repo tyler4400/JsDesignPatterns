@@ -1,7 +1,7 @@
 class People {
     constructor(name, age) {
-        this.name = name
-        this.age = age
+        this.name = name;
+        this.age = age;
     }
     eat() {
         alert(`${this.name} eat something`)
@@ -11,10 +11,21 @@ class People {
     }
 }
 
-let zhang = new People('zhang', 20)
-zhang.eat()
-zhang.speak()
+class Student extends People {
+    constructor(name, age, number){
+        super(name, age)
+        this.number = number
+    }
 
-let wang = new People('wang', 21)
-wang.eat()
-wang.speak()
+    study() {
+        alert(`${this.name} is studying`)
+    }
+}
+
+let lisa = new Student('lisa', 10, 'A1')
+let linda = new Student('linda', 11, 'A2')
+
+lisa.study()
+console.log(lisa.number)
+linda.study()
+console.log(lisa.number)
