@@ -1,12 +1,20 @@
-class Person {
-    constructor(name){
-        this.name = name;
-    };
-    getName(){
-        return this.name;
-    };
+class People {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+    eat() {
+        alert(`${this.name} eat something`)
+    }
+    speak() {
+        alert(`My name is ${this.name}, age ${this.age}`)
+    }
 }
 
-let jack = new Person('Jack');
-alert(jack.getName());
-console.log(jack);
+let zhang = new People('zhang', 20)
+zhang.eat()
+zhang.speak()
+
+let wang = new People('wang', 21)
+wang.eat()
+wang.speak()
